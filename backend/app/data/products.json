@@ -1,0 +1,524 @@
+[
+  {
+    "id": "pt-001",
+    "name": "Classic Black Oversized T-Shirt",
+    "category": "plain_tshirts",
+    "price": 799,
+    "currency": "INR",
+    "stock": 24,
+    "description": "Oversized 240 GSM cotton t-shirt in black with a relaxed everyday fit.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "pt-001",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "pt-002",
+    "name": "Essential White Crew Neck T-Shirt",
+    "category": "plain_tshirts",
+    "price": 599,
+    "currency": "INR",
+    "stock": 31,
+    "description": "Regular-fit 100% cotton crew neck t-shirt in clean white.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "pt-002",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "gt-001",
+    "name": "Midnight Graphic Print T-Shirt",
+    "category": "graphic_tshirts",
+    "price": 999,
+    "currency": "INR",
+    "stock": 18,
+    "description": "Black oversized t-shirt featuring a minimal monochrome graphic print.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "gt-001",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "gt-002",
+    "name": "Retro Racing Graphic Tee",
+    "category": "graphic_tshirts",
+    "price": 1199,
+    "currency": "INR",
+    "stock": 7,
+    "description": "Heavyweight cotton graphic t-shirt with a vintage racing-inspired print.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "gt-002",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "ca-001",
+    "name": "Relaxed Olive Cargo Pants",
+    "category": "cargos",
+    "price": 1899,
+    "currency": "INR",
+    "stock": 12,
+    "description": "Relaxed-fit olive cargo pants with six utility pockets.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "ca-001",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "ca-002",
+    "name": "Black Utility Cargo Pants",
+    "category": "cargos",
+    "price": 2299,
+    "currency": "INR",
+    "stock": 0,
+    "description": "Straight-fit black cargos with adjustable ankle toggles and utility pockets.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "ca-002",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "je-001",
+    "name": "Classic Straight Blue Jeans",
+    "category": "jeans",
+    "price": 1799,
+    "currency": "INR",
+    "stock": 15,
+    "description": "Medium-wash straight-fit denim jeans designed for everyday wear.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "je-001",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "je-002",
+    "name": "Washed Wide Leg Jeans",
+    "category": "jeans",
+    "price": 2199,
+    "currency": "INR",
+    "stock": 9,
+    "description": "Relaxed wide-leg jeans with a faded light-blue wash.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "je-002",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "jo-001",
+    "name": "Everyday Grey Joggers",
+    "category": "joggers",
+    "price": 1299,
+    "currency": "INR",
+    "stock": 22,
+    "description": "Soft fleece joggers in charcoal grey with an elasticated waistband.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "jo-001",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "sh-001",
+    "name": "Relaxed Black Casual Shorts",
+    "category": "shorts",
+    "price": 899,
+    "currency": "INR",
+    "stock": 16,
+    "description": "Lightweight casual shorts with a relaxed fit and drawstring waist.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "sh-001",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "ds-001",
+    "name": "Light Wash Denim Shorts",
+    "category": "denim_shorts",
+    "price": 1099,
+    "currency": "INR",
+    "stock": 11,
+    "description": "Classic five-pocket denim shorts in a light blue wash.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "ds-001",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "jr-001",
+    "name": "Relaxed Blue Denim Jorts",
+    "category": "jorts",
+    "price": 1399,
+    "currency": "INR",
+    "stock": 8,
+    "description": "Longer relaxed-fit denim shorts with a loose streetwear silhouette.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "jr-001",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "shi-001",
+    "name": "Linen Blend Resort Shirt",
+    "category": "shirts",
+    "price": 1499,
+    "currency": "INR",
+    "stock": 13,
+    "description": "Relaxed-fit beige linen-blend shirt suitable for casual and resort wear.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "shi-001",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "shi-002",
+    "name": "Classic Navy Oxford Shirt",
+    "category": "shirts",
+    "price": 1699,
+    "currency": "INR",
+    "stock": 6,
+    "description": "Structured navy Oxford shirt with a classic collar and regular fit.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "shi-002",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "sk-001",
+    "name": "Flowy Black Midi Skirt",
+    "category": "skirts",
+    "price": 1299,
+    "currency": "INR",
+    "stock": 10,
+    "description": "Minimal black midi skirt with a comfortable flowy silhouette.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "sk-001",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "ss-001",
+    "name": "Silver Sequin Party Skirt",
+    "category": "sequin_skirts",
+    "price": 1799,
+    "currency": "INR",
+    "stock": 5,
+    "description": "High-waisted party skirt covered in reflective silver sequins.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "ss-001",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "dsk-001",
+    "name": "Vintage Blue Denim Skirt",
+    "category": "denim_skirts",
+    "price": 1399,
+    "currency": "INR",
+    "stock": 14,
+    "description": "A-line denim skirt in medium blue with a vintage-inspired wash.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "dsk-001",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "dw-001",
+    "name": "Minimal Digital Sport Watch",
+    "category": "digital_watches",
+    "price": 1299,
+    "currency": "INR",
+    "stock": 19,
+    "description": "Lightweight digital sports watch with stopwatch, alarm and backlight.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "dw-001",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "sw-001",
+    "name": "PulseFit Smart Watch",
+    "category": "smart_watches",
+    "price": 2499,
+    "currency": "INR",
+    "stock": 12,
+    "description": "Smart watch with activity tracking, notifications and heart-rate monitoring.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "sw-001",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "sw-002",
+    "name": "Pro AMOLED Smart Watch",
+    "category": "smart_watches",
+    "price": 4999,
+    "currency": "INR",
+    "stock": 4,
+    "description": "Premium smart watch with AMOLED display, GPS and advanced activity tracking.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "sw-002",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "vw-001",
+    "name": "Heritage Vintage Leather Watch",
+    "category": "vintage_watches",
+    "price": 3299,
+    "currency": "INR",
+    "stock": 3,
+    "description": "Vintage-inspired analog watch with a brown leather strap and cream dial.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "vw-001",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "shoes-001",
+    "name": "Everyday White Sneakers",
+    "category": "sneakers",
+    "price": 1999,
+    "currency": "INR",
+    "stock": 8,
+    "description": "Minimal white sneakers designed for everyday college and casual wear.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "shoes-001",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "shoes-002",
+    "name": "Retro Court Sneakers",
+    "category": "sneakers",
+    "price": 2799,
+    "currency": "INR",
+    "stock": 6,
+    "description": "Retro-inspired low-top sneakers with a cream and green colorway.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "shoes-002",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "shoes-003",
+    "name": "Premium Street Sneakers",
+    "category": "sneakers",
+    "price": 5499,
+    "currency": "INR",
+    "stock": 0,
+    "description": "Premium chunky sneakers with layered panels and a streetwear silhouette.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "shoes-003",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "shoe-001",
+    "name": "Classic Brown Chelsea Boots",
+    "category": "shoes",
+    "price": 2999,
+    "currency": "INR",
+    "stock": 5,
+    "description": "Classic ankle-length Chelsea boots in brown faux leather.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "shoe-001",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "bag-001",
+    "name": "Urban Black Backpack",
+    "category": "bags",
+    "price": 1899,
+    "currency": "INR",
+    "stock": 17,
+    "description": "Water-resistant everyday backpack with a padded laptop compartment.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "bag-001",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "bag-002",
+    "name": "Structured Tan Shoulder Bag",
+    "category": "bags",
+    "price": 2299,
+    "currency": "INR",
+    "stock": 7,
+    "description": "Structured tan shoulder bag with an adjustable strap and magnetic closure.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "bag-002",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "tote-001",
+    "name": "Heavyweight Natural Canvas Tote",
+    "category": "totes",
+    "price": 699,
+    "currency": "INR",
+    "stock": 35,
+    "description": "Reusable heavyweight cotton canvas tote with reinforced handles.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "tote-001",
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "id": "tote-002",
+    "name": "Graphic Canvas Market Tote",
+    "category": "totes",
+    "price": 899,
+    "currency": "INR",
+    "stock": 20,
+    "description": "Roomy natural canvas tote featuring a minimal graphic print.",
+    "purchase_action": {
+      "type": "purchase",
+      "method": "POST",
+      "endpoint": "/agent/tools/initiate_purchase",
+      "input": {
+        "product_id": "tote-002",
+        "quantity": 1
+      }
+    }
+  }
+]
