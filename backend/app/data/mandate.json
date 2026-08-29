@@ -1,0 +1,9 @@
+{
+  "mandate_id": "M-1001",
+  "currency": "INR",
+  "max_transaction": 3000,
+  "daily_limit": 5000,
+  "allowed_categories": ["plain_tshirts", "sneakers", "bags"],
+  "require_confirmation_above": 2500,
+  "expires_at": "2026-09-04T23:59:59+05:30"
+}
