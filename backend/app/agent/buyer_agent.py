@@ -48,7 +48,7 @@ def initiate_purchase(product_id: str, quantity: int = 1) -> dict:
 
 model = ChatGoogleGenerativeAI(
     model="gemini-3.5-flash-lite",
-    google_api_key=os.getenv("AQ.Ab8RN6J3LZooU_9YKC8iRF6Nk-Lj8UliNUI04cqNVtQPN-RCYQ"),
+    google_api_key=os.getenv("google-api-key"),
 )
 
 agent = create_react_agent(
