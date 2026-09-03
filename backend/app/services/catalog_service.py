@@ -1,8 +1,6 @@
 import json
 from pathlib import Path
-
 from app.schemas.product import Product, ProductFilters
-
 
 DATA_FILE = (
     Path(__file__).resolve().parent.parent
@@ -14,18 +12,15 @@ DATA_FILE = (
 def load_products() -> list[Product]:
     with open(DATA_FILE, "r", encoding="utf-8") as file:
         data = json.load(file)
-
     return [Product(**product) for product in data]
 
 
 def list_products(filters: ProductFilters) -> list[Product]:
     products = load_products()
-
     results = products
 
     if filters.category:
         category = filters.category.strip().lower()
-
         results = [
             product
             for product in results
@@ -48,7 +43,6 @@ def list_products(filters: ProductFilters) -> list[Product]:
 
     if filters.search:
         search_term = filters.search.strip().lower()
-
         results = [
             product
             for product in results
@@ -71,9 +65,20 @@ def list_products(filters: ProductFilters) -> list[Product]:
 
 def get_product(product_id: str) -> Product | None:
     products = load_products()
-
     for product in products:
         if product.id == product_id:
             return product
-
     return None
+
+
+def update_product_stock(product_id: str, new_stock: int) -> None:
+    with open(DATA_FILE, "r", encoding="utf-8") as file:
+        data = json.load(file)
+
+    for product in data:
+        if product["id"] == product_id:
+            product["stock"] = new_stock
+            break
+
+    with open(DATA_FILE, "w", encoding="utf-8") as file:
+        json.dump(data, file, indent=2, ensure_ascii=False)

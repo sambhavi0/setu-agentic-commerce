@@ -1,9 +1,10 @@
 import uuid
 
-from app.services.catalog_service import get_product
+from app.services.catalog_service import get_product, update_product_stock
 from app.services.policy_service import evaluate_purchase
 from app.services.mandate_service import get_active_mandate
 from app.services.audit_service import log_audit_event
+from app.services.razorpay_adapter import create_order, create_payment_link
 
 
 def initiate_purchase(product_id: str, quantity: int):
@@ -51,8 +52,17 @@ def initiate_purchase(product_id: str, quantity: int):
             "reason": decision["reason"],
         }
 
+    update_product_stock(product.id, product.stock - quantity)
+
     transaction_id = f"TX-{uuid.uuid4().hex[:8].upper()}"
     total_amount = product.price * quantity
+
+    order = create_order(amount_rupees=total_amount, receipt=transaction_id)
+    payment_link = create_payment_link(
+        order_id=order["id"],
+        amount_rupees=total_amount,
+        description=f"Purchase of {product.name} (x{quantity})",
+    )
 
     return {
         "success": True,
@@ -60,6 +70,8 @@ def initiate_purchase(product_id: str, quantity: int):
         "status": decision["status"],
         "reason": decision["reason"],
         "transaction_id": transaction_id,
+        "order_id": order["id"],
+        "payment_link": payment_link["short_url"],
         "product": {
             "id": product.id,
             "name": product.name,

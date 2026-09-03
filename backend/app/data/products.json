@@ -5,7 +5,7 @@
     "category": "plain_tshirts",
     "price": 799,
     "currency": "INR",
-    "stock": 24,
+    "stock": 23,
     "description": "Oversized 240 GSM cotton t-shirt in black with a relaxed everyday fit.",
     "purchase_action": {
       "type": "purchase",
@@ -23,7 +23,7 @@
     "category": "plain_tshirts",
     "price": 599,
     "currency": "INR",
-    "stock": 31,
+    "stock": 30,
     "description": "Regular-fit 100% cotton crew neck t-shirt in clean white.",
     "purchase_action": {
       "type": "purchase",
@@ -455,7 +455,7 @@
     "category": "bags",
     "price": 1899,
     "currency": "INR",
-    "stock": 17,
+    "stock": 16,
     "description": "Water-resistant everyday backpack with a padded laptop compartment.",
     "purchase_action": {
       "type": "purchase",
