@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_groq import ChatGroq
 from langchain_core.tools import tool
 from langgraph.prebuilt import create_react_agent
 
@@ -46,9 +46,9 @@ def initiate_purchase(product_id: str, quantity: int = 1) -> dict:
     return initiate_purchase_tool(product_id=product_id, quantity=quantity)
 
 
-model = ChatGoogleGenerativeAI(
-    model="gemini-3.5-flash-lite",
-    google_api_key=os.getenv("google-api-key"),
+model = ChatGroq(
+    model="openai/gpt-oss-20b",
+    api_key=os.getenv(" "),
 )
 
 agent = create_react_agent(
