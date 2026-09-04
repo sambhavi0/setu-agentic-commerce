@@ -24,8 +24,8 @@ Do not skip calling initiate_purchase under any circumstances when the user want
 
 
 @tool
-def list_products(category: str = None, min_price: float = None,
-                   max_price: float = None, search: str = None,
+def list_products(category: str | None = None, min_price: float | None = None,
+                   max_price: float | None = None, search: str | None = None,
                    in_stock_only: bool = False) -> dict:
     """Search the merchant's product catalog with optional filters."""
     return list_products_tool(
@@ -44,7 +44,6 @@ def get_product(product_id: str) -> dict:
 def initiate_purchase(product_id: str, quantity: int = 1) -> dict:
     """Attempt to purchase a product. Checked against stock and a spending mandate before completing."""
     return initiate_purchase_tool(product_id=product_id, quantity=quantity)
-
 
 model = ChatGroq(
     model="openai/gpt-oss-20b",

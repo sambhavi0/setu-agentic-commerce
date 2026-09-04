@@ -23,7 +23,7 @@
     "category": "plain_tshirts",
     "price": 599,
     "currency": "INR",
-    "stock": 30,
+    "stock": 27,
     "description": "Regular-fit 100% cotton crew neck t-shirt in clean white.",
     "purchase_action": {
       "type": "purchase",
