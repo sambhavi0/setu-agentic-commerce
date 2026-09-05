@@ -1,0 +1,84 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #f5f5f5; }
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 320px;
+  background: #1a1a2e;
+  color: white;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.sidebar h2 { margin: 0 0 4px; }
+.subtitle { font-size: 13px; color: #aaa; margin-bottom: 20px; }
+
+.mandate-box {
+  background: #22223a;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.mandate-box p { margin: 4px 0; }
+
+.audit-list { display: flex; flex-direction: column; gap: 8px; }
+.audit-entry {
+  background: #22223a;
+  padding: 8px 10px;
+  border-left: 4px solid #888;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.audit-entry p { margin: 2px 0; }
+.audit-entry .reason { color: #ccc; }
+.muted { color: #777; font-size: 13px; }
+
+.chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.chat-log {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bubble {
+  max-width: 70%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  white-space: pre-wrap;
+}
+.bubble.user { align-self: flex-end; background: #2e7d32; color: white; }
+.bubble.agent { align-self: flex-start; background: white; border: 1px solid #ddd; }
+
+.chat-input {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.chat-input button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #1a1a2e;
+  color: white;
+  cursor: pointer;
+}
+.chat-input button:disabled { opacity: 0.5; cursor: not-allowed; }
